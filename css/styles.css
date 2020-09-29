@@ -1,0 +1,130 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  line-height: 1.618em;
+}
+html,
+body {
+  height: 100%;
+}
+.background {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+      rgba(84, 89, 93, 0.74),
+      rgba(84, 89, 93, 0.74)
+    ),
+    url("../assets/map.JPG");
+  max-width: 100%;
+  width: 800px;
+  height: 534px;
+  background-size: 100% 100%;
+}
+
+.background::after {
+  content: "";
+}
+
+#header h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 534px;
+  width: 100%;
+}
+#header p {
+  color: black;
+  width: 100%;
+}
+#aboutUs {
+  padding: 2em 0;
+}
+#aboutUs h1 {
+}
+
+#workHistory b {
+  display: flex;
+  float: right;
+}
+
+#workHistory ul {
+  padding-left: 30px;
+}
+
+#workHistory p {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.project {
+  /* background-color: #444; */
+  color: black;
+  border-radius: 5px;
+
+  font-size: 120%;
+
+  text-align: left;
+}
+.project img {
+  display: flex;
+  width: 100%;
+}
+
+.project:hover {
+  background-color: blue;
+}
+
+#education b {
+  display: flex;
+  float: right;
+}
+
+#education ul {
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+#education p {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+main {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  flew-flow: row;
+  justify-content: center;
+  margin-bottom: 40px;
+  background-color: #333;
+}
+
+.nav a {
+  padding: 0.5em 2em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background: #666;
+}
+
+h1 {
+  padding-top: 20px;
+}
