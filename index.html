@@ -7,8 +7,30 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
+  <div id="myModal" class="modal">
+    <span class="closeCursor">&times;</span>
+    <div class="modal-content">
+      <div class="mySlides">
+        <div class="numbertext">1/3</div>
+        <img src="assets/slide_show_img/sudoku_error.JPG" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2/3</div>
+        <img src="assets/slide_show_img/sudoku_home.JPG" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">3/3</div>
+        <img src="assets/slide_show_img/sudoku_pencil.JPG" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+
   <body>
-    <main>
+    <main class="main">
       <div class="background">
         <div id="header">
           <h1>Barry Robertson Resume</h1>
@@ -129,33 +151,51 @@
           <div class="project"><img src="assets/amok.JPG" /></div>
           <div class="projectDescription">
             <h2>Sudoku</h2>
-            <p>
-              Created a program that helps solve Sudoku puzzles by giving users
-              hints as well as indicating when they misplaced a number. It can
-              also solve any given Sudoku puzzle.
-            </p>
+            <button type="button" class="collapsible">More Information</button>
+            <div class="content">
+              <p>
+                Created a program that helps solve Sudoku puzzles by giving
+                users hints as well as indicating when they misplaced a number.
+                It can also solve any given Sudoku puzzle.
+              </p>
+            </div>
           </div>
           <div class="projectDescription">
             <h2>Virtual Pet Amok</h2>
-            <p>
-              Created a program in Java that runs a Virtual Pet Shelter. The
-              Java Program makes use of Object Oriented Programming as well as
-              Test Driven Development.
-            </p>
+            <button type="button" class="collapsible">More Information</button>
+            <div class="content">
+              <p>
+                Created a program in Java that runs a Virtual Pet Shelter. The
+                Java Program makes use of Object Oriented Programming as well as
+                Test Driven Development.
+                <!-- <button type="button" class="projectSlideShow">
+                  Additional Images
+                </button> -->
+              </p>
+            </div>
           </div>
 
           <div class="projectDescription">
             <h2>Placeholder</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              eros risus, scelerisque a nulla vitae, rhoncus malesuada leo.
-              Phasellus sit amet eros tempor, varius leo ut, interdum tellus.
-              Pellentesque nec nisi pretium, suscipit purus a, hendrerit ante.
-            </p>
+            <button type="button" class="collapsible">More Information</button>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                eros risus, scelerisque a nulla vitae, rhoncus malesuada leo.
+                Phasellus sit amet eros tempor, varius leo ut, interdum tellus.
+                Pellentesque nec nisi pretium, suscipit purus a, hendrerit ante.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
+      <div id="projectScreenshots">
+        <h1>Project Screenshots</h1>
+        <button type="button" class="projectSlideShow">
+          Additional Images
+        </button>
+      </div>
       <div id="education">
         <h1>Education</h1>
         <h2>The Ohio State University</h2>
@@ -169,6 +209,7 @@
       </div>
     </main>
     <div class="nav">
+      <button type="button" class="hideNav">&times</button>
       <a href="#aboutUs">About Me</a>
       <a href="#skills">Skills</a>
 
@@ -176,5 +217,6 @@
       <a href="#projects">Projects</a>
       <a href="#education">Education</a>
     </div>
+    <script src="scripts.js"></script>
   </body>
 </html>
